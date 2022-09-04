@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #1e1e1e;
+    margin-top: 30px;
+    
+}
+.text-center {
+    text-align: center!important;
+    
+}
+main {
+    display: block;
+    outline: 2px dashed #f7f8f9;
+    outline-offset: 30px;
+    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.w-100 {
+    width: 100%!important;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+.m-auto {
+    margin: auto!important;
+}
+
+#check{
+    margin-left: 75px;
+    margin-right: 10px;
+}
+
