@@ -1,3 +1,20 @@
-*{
+/* *{
     background-color: pink;
+} */
+
+#logotipo{
+    display: flex;
+    padding: 0;
+    column-width: auto;
+    height: 90px;
+    background-color: red;
+    
 }
+
+#logo{
+    align-self: top;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
