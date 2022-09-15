@@ -2,7 +2,37 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-emphasis-color: black;
 }
+h1{
+    color: aliceblue;
+}
+
+.Titulo{
+align-self: center;
+
+}
+
+#boton{
+transition-duration: 0.4s;
+background-color: #062539;
+border-color: #062539;
+color: white;
+height: 50px;
+}
+
+#Boton{
+    align-self: center;
+    float: right;
+    margin-right: 10px;
+
+}
+#boton:hover{
+background-color: #02111B;
+color: white;
+}
+
+
 
 html{
     height: 100%;
@@ -12,45 +42,59 @@ body{
     min-height: 100%;
 }
 
+
+
 .grid-container > * {
 
 box-shadow: -1px 1px 7px 0px black;
 border-radius: 4px;
 padding: 10px;
 text-align: center;
-    
 }
 
 .header{
     grid-area: header;
     display: flex;
+    background-color:  #02111B;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img{
+    height: 100px;
 }
 
 
 .navbar{
     grid-area: navbar;
+    background-color:  #02111B;
 }
 .main{
     grid-area: main;
+    background-color:  #02111B;
 }
 .sidebar{
     grid-area: sidebar;
+    background-color:  #02111B;
 }
 .footer{
     grid-area: footer;
+    background-color:  #02111B;
 }
 
 
 .grid-container{
 display: grid;
+background-color:  #062539;
 gap: 10px;
 grid-template: 
 "header" 100px
-"navbar" 50px
 "sidebar"   auto
+"navbar" 50px
 "main" auto
 "footer"  auto
 ;
+
 }
 
 
@@ -79,3 +123,14 @@ grid-template:
     }
 }
 
+@media all and (max-width: 599px){
+.header h1{
+ font-size: large;
+}
+.header img{
+    height: 70px;
+}
+.header{
+    justify-content: space-around;
+}
+}

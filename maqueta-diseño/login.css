@@ -3,7 +3,7 @@ body {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #1e1e1e;
+    background-color: #02111B;
     margin-top: 30px;
     
 }
@@ -36,3 +36,14 @@ main {
     margin-right: 10px;
 }
 
+#boton{
+    transition-duration: 0.4s;
+    background-color: #062539;
+    border-color: #062539;
+    color: white;
+    }
+    
+    #boton:hover{
+    background-color: #02111B;
+    color: white;
+    }
