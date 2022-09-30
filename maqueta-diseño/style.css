@@ -40,6 +40,8 @@ html{
 
 body{
     min-height: 100%;
+    overflow: scroll;
+    position: relative;
 }
 
 
@@ -73,6 +75,7 @@ text-align: center;
 .main{
     grid-area: main;
     background-color:  rgb(13, 13, 13);
+
 }
 .sidebar{
     grid-area: sidebar;
@@ -130,7 +133,7 @@ grid-template:
     .grid-container{
         grid-template: 
         "header header header"  100px
-        ". navbar navbar"   50px
+        "navbar navbar navbar"   50px
         "sidebar main main"      auto
         "footer footer footer"   auto /
         200px   auto    200px  
@@ -153,3 +156,4 @@ grid-template:
     height: 200px;
 }
 }
+
