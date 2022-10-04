@@ -21,6 +21,7 @@ color: white;
 height: 50px;
 }
 
+
 #Boton{
     align-self: center;
     float: right;
@@ -100,7 +101,7 @@ text-shadow: 2px 2px 1px #9909af;
 
 .grid-container{
 display: grid;
-background-color: black;
+background-color: rgb(15, 15, 15);
 gap: 10px;
 grid-template: 
 "header" 100px
