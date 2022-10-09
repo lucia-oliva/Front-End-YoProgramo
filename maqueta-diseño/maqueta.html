@@ -7,15 +7,17 @@
     <title>Grid</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
-<body class="grid-container" class="scrollpsy-example p5-m5" tabindex="0" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  </head>
+<body class="grid-container" data-bs-spy="scroll" data-bs-target="#navbarmain">
     <header class="header">
-      <img class="img-fluid" alt="Logotipo ArgentinaPrograma" src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1662441043/APLogo-20-20.png">
-      <div id="Boton">
-            <a href="login.html"><button type="button" id="boton" class="btn btn-light">Sign In</button></a>
-      </div>
+     
     </header>
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top" id="#navbarmain">
       <div class="container-fluid" id="contenedor">
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -33,34 +35,42 @@
         <li class="nav-item">
           <a class="nav-link" href="#scrollspy5">Contacto</a>
         </li>
+        <li class="pull-right">
+          <div id="Boton">
+            <a href="login.html"><button type="button" id="boton" class="btn btn-light">Sign In</button></a>
+            </div>
+        </li>
       </ul>
-      </div>
+    </div>
     </nav>
     <aside class="sidebar">
-      <div>
+      <div class="box">
         <img id="foto" class="img-fluid" src="Modern About Me Instagram Story.jpg" alt="Foto de descripcion">
       </div>
       <div></div>
       <div>
           <h4>FullStack Developer Jr</h4>
-          <p>Hola soy un paraffo con mi descripcion personal, sy estudiante de Sistemas tengo 21 años, mi interes personal es en front end pero me dejo llevar por cualwuier otra corriente etc etc etc etc que pasa si agrego mas contenido? ah</p>
+          <h5>¡Bienvenidos a mi portfolio web!</h5>
+          <h5>Soy una aficionada con todo lo que este relacionado al arte y a lo tecnologico, como resultado encontre mi camino en el Desarrollo Web.</h5>
+          <h5>Tengo 21 años y estoy estudiando programacion desde 2021, desde ese entonces me encamine de forma autodidacta en el mundo Tech.</h5>
+          <h5>Soy una persona activa, creativa y sobre todo predispuesta a aprender todo el tiempo.</h5>
+          <p id="frase">"Siempre parece imposible hasta que se hace" - Nelson Mandela</p>
       </div>
     </aside>
     <article class="main">
       <div class="experiencia" id="scrollspy1" >
         <h4 class="titulos">Experiencia</h4>
-        <div class="maIn">
-          <img class="logoA" src="https://www.tclarioja.com.ar/images/logo/2.png" alt="logotipo Tribunal de Cuentas">
+        <div class="container-fluid">
             <div class="texto">
-              <h4>Practicas - Asistente Administrativo</h4>
+              <h4 class="subtitulo">Practicas - Asistente Administrativo</h4>
               <p>Tribunal de Cuentas de la Ciudad de La Rioja</p>
               <p>Abril 2019 - Noviembre 2019</p>
           </div>
         </div>
-        <div class="maIn">
-          <img class="logoA" src="https://www.unlar.edu.ar/images/Identidad/unlar_logo.png" alt="trabajo" width="400px">
+        <div class="container-fluid">
+         
             <div class="texto">
-              <h4>Practicas - Asistente Bibliotecario</h4>
+              <h4 class="subtitulo">Practicas - Asistente Bibliotecario</h4>
               <p>Universidad Nacional de La Rioja</p>
               <p>Abril 2018 - Noviembre 2019</p>
           </div>
@@ -69,28 +79,30 @@
 
       <div class="estudios" id="scrollspy2" style="flex-direction: column;">
         <h4 class="titulos">Educacion</h4>
-        <div class="maIn">
+        <div class="container-fluid">
         
-          <img class="logoA" src="https://www.unlar.edu.ar/images/Identidad/unlar_logo.png" alt="trabajo" width="400px">
+        
             <div class="texto">
-              <h4>Licenciatura en Sistemas de Informacion</h4>
+              <h4 class="subtitulo">Licenciatura en Sistemas de Informacion</h4>
               <p>Universidad Nacional de La Rioja</p>
               <p>2021 - Actualidad</p>
           </div>
         </div>
-        <div class="maIn">
-          <img class="" src="english.PNG" alt="trabajo" width="200px">
-            <div class="texto">
-              <h4>Tecnicatura en Idioma Ingles</h4>
+        <div class="container-fluid">
+          
+         
+     
+          <div class="texto">
+              <h4 class="subtitulo">Tecnicatura en Idioma Ingles</h4>
               <p>English Tower Institute</p>
               <p>2021 - Actualidad</p>
-            
           </div>
         </div>
-        <div class="maIn">
-          <img class="" src="https://cpugsm.comunidadeduar.com.ar/assets/img/logo.png" alt="trabajo" width="150px" backgro>
+        
+        <div class="container-fluid">
+         
             <div class="texto">
-              <h4>Tecnicatura en Administracion y Gestion de Empresas</h4>
+              <h4 class="subtitulo">Tecnicatura en Administracion y Gestion de Empresas</h4>
               <p>Colegio Pre-Universitario General San Martin</p>
               <p>2012-2019</p>
           </div>
@@ -98,12 +110,123 @@
       </div>
 
       <div class="skills" id="scrollspy3" style="flex-direction: column;">
-        <h4 class="titulos">Skills</h4>
+        <h4 class="titulos">Hard Skills</h4>
+        <div class="container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="HTML 5">
+              </div>
+              <h5>HTML 5</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="CSS3">
+              </div>
+              <h5>CSS3</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JAVASCRIPT">
+              </div>
+              <h5>JAVASCRIPT</h5>
+              
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="BOOTSTRAP">
+              </div>
+              <h5>BOOTSTRAP</h5>
+              
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GITHUB">
+              </div>
+              <h5>GITHUB</h5>
           
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/3600/3600912.png" alt="C">
+              </div>
+              <h5>C</h5>
+            
+            </div>
+          </div>
+        </div>
+        <h4 class="titulos">Soft Skills</h4>
+        <div class="container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/3940/3940177.png" alt="Creatividad">
+              </div>
+              <h5>CREATIVIDAD</h5>
+              
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" alt="Trabajo en EQUIPO">
+              </div>
+              <h5>TRABAJO EN EQUIPO</h5>
+              
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png" alt="Compromiso">
+              </div>
+              <h5>COMPROMISO</h5>
+           
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/2490/2490421.png" alt="Aprendizaje">
+              </div>
+              <h5>APRENDIZAJE INDEPENDIENTE</h5>
+              
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/6911/6911421.png" alt="INTELIGENCIA EMOCIONAL">
+              </div>
+              <h5>INTELIGENCIA EMOCIONAL</h5>
+          
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/775/775619.png" alt="PENSAMIENTO CRITICO">
+              </div>
+              <h5>PENSAMIENTO CRITICO</h5>
+             
+            </div>
+          </div>
+        </div>
+
       </div>
       
       <div class="Proyectos" id="scrollspy4" style="flex-direction: column;">
-        <h4 class="Proyectos">Educacion</h4>
+        <h4 class="Proyectos">Proyectos</h4>
           
       </div>
     </article>
@@ -112,9 +235,9 @@
         <a href="mailto:lucia222lr@gmail.com">Contactame!</a>
         <p>Hecho con amor desde <a href="https://www.instagram.com/argentinaprograma4.0/?hl=es" target="_blank">ArgentinaPrograma</a></p>
         <div class="redesSociales">
-          <a href="https://github.com/lucia-oliva" target="_blank"><img style="height: 35px;" src="https://cdn-icons-png.flaticon.com/128/733/733553.png"></a>
-          <a href="https://instagram.com/lu_dhk?igshid=YmMyMTA2M2Y=" target="_blank"><img style="height: 35px; margin-left: 8px;" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
-          <a href="https://www.linkedin.com/in/ana-lucia-oliva-9704981b8/"target="_blank"><img style="height: 35px; margin-left: 8px;" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"></a>
+          <a href="https://github.com/lucia-oliva" target="_blank"><img style="height: 40px;" src="https://cdn-icons-png.flaticon.com/128/733/733553.png"></a>
+          <a href="https://instagram.com/lu_dhk?igshid=YmMyMTA2M2Y=" target="_blank"><img style="height: 40px; margin-left: 8px;" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
+          <a href="https://www.linkedin.com/in/ana-lucia-oliva-9704981b8/"target="_blank"><img style="height: 40px; margin-left: 8px;" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"></a>
       </div>
       </div>
     </footer>

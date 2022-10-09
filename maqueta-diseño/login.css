@@ -1,5 +1,4 @@
 body {
-    display: flex;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -13,8 +12,12 @@ body {
 }
 main {
     display: block;
-    outline: 2px dashed #f7f8f9;
+    outline: 4px dotted  rgb(120, 26, 123);
     outline-offset: 30px;
+    border: 2px  solid #553e58;
+    border-radius: 15px 50px 30px;
+    background-image: linear-gradient(to bottom right, rgb(54, 54, 54), rgb(120, 26, 123));
+    margin-bottom: 10px;
     
 }
 *, ::after, ::before {
@@ -38,12 +41,12 @@ main {
 
 #boton{
     transition-duration: 0.4s;
-    background-color: #062539;
-    border-color: #062539;
+    background-color: #0e0e0e;
+    border-color: #0e0e0e;
     color: white;
     }
     
     #boton:hover{
-    background-color: #02111B;
+    background-color: #9909af;
     color: white;
     }

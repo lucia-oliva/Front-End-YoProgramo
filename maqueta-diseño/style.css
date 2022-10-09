@@ -3,7 +3,17 @@
     margin: 0;
     padding: 0;
     text-emphasis-color: black;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
+p{
+ font-family: 'Calibri Light';
+ font-size: large;
+ color: #ffffff;
+}
+
+
 
 #boton{
 transition-duration: 0.4s;
@@ -16,8 +26,6 @@ height: 50px;
 
 #Boton{
     align-self: center;
-    float: right;
-    margin-right: 10px;
 
 }
 #boton:hover{
@@ -25,16 +33,14 @@ background-color:#9909af;
 color: white;
 }
 
-
-
 html{
     height: 100%;
 }
 
 body{
     min-height: 100%;
-    overflow: scroll;
     position: relative;
+    
 }
 
 
@@ -47,25 +53,12 @@ padding: 10px;
 text-align: center;
 }
 
-.header{
-    grid-area: header;
-    display: flex;
-    background-image: url(wallpapersden.com_minimal-glowing-code-binary_2560x1080.jpg); 
-    background-size: 1800px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header img{
-    height: 100px;
-}
-
-
-
 .navbar{
     grid-area: navbar;
-    background-color:  #0e0e0e;
+    background-color: #0e0e0e;
+
 }
+
 
 .navbar a{
     color:#f4f4f4; 
@@ -86,11 +79,13 @@ text-align: center;
     grid-area: main;
     background-color:  #0e0e0e;
 
+
 }
 .sidebar{
     grid-area: sidebar;
     align-items: center;
-    background-color:  #0e0e0e
+    background-image: url(wallpapersden.com_minimal-glowing-code-binary_2560x1080.jpg); 
+    background-size: cover;
 }
 .footer{
     grid-area: footer;
@@ -98,9 +93,6 @@ text-align: center;
     background-size: 1800px;
 }
 
-p{
-    color: aliceblue;
-}
 
 h4{
 color: #ffffff;
@@ -108,8 +100,12 @@ text-shadow: 2px 2px 1px #b107c7;
 padding-bottom: 10px;
 }
 
+h5{
+    color: #ffffff;
+}
+
 .footer a{
-    color: #9909af;
+    color: #e53eff;
 }
 
 .grid-container{
@@ -118,7 +114,6 @@ background-color: rgb(0, 0, 0);
 gap: 10px;
 grid-template: 
 "navbar" 50px
-"header" 100px
 "sidebar"   auto
 "main" auto
 "footer"  auto
@@ -131,24 +126,31 @@ grid-template:
     .grid-container{
         grid-template:
         "navbar navbar"  50px
-       "header header"  100px
-       "sidebar main"   auto
+       "sidebar sidebar" auto
+       "main main"   auto
        "footer footer"  auto /
         200px   auto;
        ;
     }
 
+    #foto{
+        height: 300px;
+    }
 }
 
 @media (min-width: 900px){
     .grid-container{
         grid-template: 
         "navbar navbar navbar"   50px
-        "header header header"  100px
-        "sidebar main main"      auto
+        "sidebar sidebar sidebar" auto
+        "main main main"      auto
         "footer footer footer"   auto /
         200px   auto    200px  
         ;
+    }
+
+    #foto{
+        height: 400px;
     }
 }
 
@@ -168,20 +170,22 @@ grid-template:
 }
 }
 
-.logoA{
-    width: 400px;
-    vertical-align: middle;
-    
-    margin-top: 10px;
-    margin-right: 3opx;
-
+.box{
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
-.maIn{
+#frase{
+    font-style: italic;
+    padding-top: 20px;
+}
+
+article  .container-fluid {
     border: 2px  solid #553e58;
     border-radius: 15px 50px 30px;
     background-image: linear-gradient(to bottom right, rgb(54, 54, 54), rgb(120, 26, 123));
     margin-bottom: 20px;
+
 }
 
 .titulos{
@@ -189,9 +193,90 @@ grid-template:
     margin-top: 30px;
 }
 
+.subtitulo{
+color: #ffffff;
+text-shadow: 3px 1px 1px #b107dc;
+padding-bottom: 10px;
+font-weight: bold;
+}
+
 .texto{
     display: inline-block;
     vertical-align: middle;
-    padding: 10px;
+
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(54, 54, 54), rgb(120, 26, 123));
+    border: 2px  solid #553e58;
+    border-radius: 15px 50px 30px;
+
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 00.5rem;
+}
+
+.skill-title h5{
+    color: rgb(211, 187, 240);
+    margin: 0.5rem;
+    position: relative;
+}
+
+.skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before{
+    width: 35px;
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+
+
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: rgb(194, 164, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+
+.img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 45px 0 0 45px;
+
+}
+
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
